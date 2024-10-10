@@ -127,6 +127,7 @@ crypto-price-monitor/
 │   ├── app.js                    # Main application file
 │   └── index.js                  # Entry point of the application
 ├── .env                           # Environment variables
+|── Dockerfile                     # Dockerfile for containerization
 ├── package.json                   # Project metadata and dependencies
 └── README.md                      # Project documentation
 ```
