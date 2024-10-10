@@ -46,7 +46,7 @@ A Node.js application that fetches and tracks the current prices, market caps, a
 4. Start the server:
 
    ```bash
-   npm start
+   npm run start
    ```
 
 ## Usage
