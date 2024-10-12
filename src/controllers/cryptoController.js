@@ -24,7 +24,7 @@ exports.getCryptoDeviation = async (req, res) => {
 
     try {
         const dataPoints = await Crypto.find({ coin }).sort({ fetchedAt: -1 }).limit(100);
-        if (!dataPoints) {
+        if (dataPoints.length === 0) {
             return res.status(404).json({ message: 'Data not found' });
         }
         const prices = dataPoints.map(dp => dp.price);
